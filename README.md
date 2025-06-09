@@ -1,20 +1,19 @@
-This is a base node js project template, which anyone can use as it has been prepared, by keeping some og the most important cide principles and project management recommedations. Feel free to change anything 
 
 `src` -> Inside the src folder all the actual source code regarding the project will reside this will not include any kind of tests. (you might want to make separate tests folder)
 
 Lets take look inside the `src` folder
 
--`config` -> In this folder anything and everything regarding any configuration or setup of library or module will be done. For example: setting up `dotenv` so that we can use the environment variable anywhere in a clearner fashion this is done in the `server-config.js`. one more example can be to setup you logging library that can help you to prepare meaningfull logs, so configuration for this library should also be done here
+- `config` -> In this folder anything and everything regarding any configuration or setup of library or module will be done. For example: setting up `dotenv` so that we can use the environment variable anywhere in a clearner fashion this is done in the `server-config.js`. one more example can be to setup you logging library that can help you to prepare meaningfull logs, so configuration for this library should also be done here
 
--`routes` -> In the route folder, we register a route and the corresponding middleware and controllers to it
+- `routes` -> In the route folder, we register a route and the corresponding middleware and controllers to it
 
--`middlewares` -> they are just going to intercept the incoming requests where we can write our validatores,authenicators etc.
+- `middlewares` -> they are just going to intercept the incoming requests where we can write our validatores,authenicators etc.
 
--`controllers` -> they are kind of last middleware as post then you call business layer to execute the business logic. In controllers we just receive the incoming requests and data and then pass it to the business layer, and once business layer returns an output, we structure the API response in controllers and send the output
+- `controllers` -> they are kind of last middleware as post then you call business layer to execute the business logic. In controllers we just receive the incoming requests and data and then pass it to the business layer, and once business layer returns an output, we structure the API response in controllers and send the output
 
--`repositories` -> this folder contains all the logic using which we interact the DB by writing queries all the raw queries or ORM queries will go here 
+- `repositories` -> this folder contains all the logic using which we interact the DB by writing queries all the raw queries or ORM queries will go here 
 
--`services` -> contains the business logic and interacts with repositories for data from database
+- `services` -> contains the business logic and interacts with repositories for data from database
 
 -`utils` -> contains the helper methods,error classess etc.
 
